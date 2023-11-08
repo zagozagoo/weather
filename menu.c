@@ -4,7 +4,7 @@ int main()
 {
     FILE *file;
     char line[200];
-    char date[120];
+    char date[20];
     int year, month, day;
 
     file = fopen ("weather_data.txt", "r");

@@ -21,11 +21,11 @@ histjson = histresponse.json()
 with open ("weather_data.txt", "w") as file:
   
 # Percorre a lista dentro do json que possui todas as informações de previsão dos proximos 5 dias
-    for i in range(len(histjson["list"])): 
+    for i in range(len(histjson["list"])): # :)
         list_data = histjson["list"][i] # Valor atual da lista
         main_info = list_data["main"] # Pegando os dados principais do valor atual
     
-        file.write(f"{list_data['dt_txt']}:") # Printando a data exata daquelas informações
+        file.write(f"{list_data['dt_txt']}: ") # Printando a data exata daquelas informações
         file.write(f"Temperatura: {main_info['temp']}\n")
         file.write(f"Humidade: {main_info['humidity']}\n")
         file.write(f"Pressao: {main_info['pressure']}\n\n")
