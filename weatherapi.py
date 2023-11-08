@@ -26,8 +26,8 @@ with open ("weather_data.txt", "w") as file:
         main_info = list_data["main"] # Pegando os dados principais do valor atual
     
         file.write(f"{list_data['dt_txt']}: ") # Printando a data exata daquelas informações
-        file.write(f"Temperatura: {main_info['temp']}\n")
-        file.write(f"Humidade: {main_info['humidity']}\n")
-        file.write(f"Pressao: {main_info['pressure']}\n\n")
+        file.write(f"Temperatura {main_info['temp']};")
+        file.write(f" Humidade: {main_info['humidity']};")
+        file.write(f" Pressao: {main_info['pressure']};\n")
 
 print("Dados metereologicos foram salvos no arquivo 'weather_data.txt'")
