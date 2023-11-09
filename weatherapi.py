@@ -29,5 +29,5 @@ with open ("weather_data.txt", "w") as file:
         file.write(f"Temperatura:{main_info['temp']};")
         file.write(f"Humidade:{main_info['humidity']};")
         file.write(f"Pressao:{main_info['pressure']}\n")
-        
-        print("Dados metereologicos foram salvos no arquivo 'weather_data.txt'")
+
+print("Dados metereologicos foram salvos no arquivo 'weather_data.txt'")
